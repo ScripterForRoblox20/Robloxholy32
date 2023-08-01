@@ -54,6 +54,13 @@ PlayerTab:AddButton({
 })
 
 PlayerTab:AddButton({
+	Name = "My Friend's Script",
+	Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/MetaMysteries8/Metascripter-Roblox/main/source'))()
+  	end    
+})
+
+PlayerTab:AddButton({
 	Name = "Arm Wrestle Simulator",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/KrzysztofHub/script/main/loader.lua"))()
