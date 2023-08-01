@@ -39,20 +39,6 @@ PlayerTab:AddSlider({
 	end    
 })
 
-PlayerTab:AddSlider({
-	Name = "Jumppower",
-	Min = 16,
-	Max = 500,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "JP",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.Jumppower = Value
-	end    
-})
-
-
 PlayerTab:AddButton({
 	Name = "Infinite Yeild",
 	Callback = function()
