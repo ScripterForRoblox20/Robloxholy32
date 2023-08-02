@@ -319,7 +319,7 @@ function AutoEquipDrink()
 end
 
 local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local window = kavoUi.CreateLib("DrinkHaxx","Ocean")
+local window = kavoUi.CreateLib("UnBeatable's DrinkHaxx","Ocean")
 
 local Tab1 = window:NewTab("Auto Farm")
 local Tab1Section = Tab1:NewSection("Auto Farm")
@@ -334,7 +334,7 @@ local Tab4Section = Tab4:NewSection("Added Infinity yield")
 local Tab4Section = Tab4:NewSection("Made The Auto Drink Even Faster")
 local Tab5 = window:NewTab("Credits")
 local Tab5Section = Tab5:NewSection("Made By Fizz_Giver")
-local Tab5Section = Tab5:NewSection("Thanks To Granny For Help In Auto Equip")
+local Tab5Section = Tab5:NewSection("Credits to Fizz_Giver And Granny For Help")
 
 Tab1Section:NewButton("Auto Rebirth","Auto Pestiges for you",function()
 while wait(2.5) do
