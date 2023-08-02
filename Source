@@ -70,555 +70,478 @@ PlayerTab:AddButton({
 PlayerTab:AddButton({
 	Name = "Burping Simulator",
 	Callback = function()
-        function AutoEquipDrink()
-            spawn(function()
-                    if not game.Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink") then
-                        if not game.Players.LocalPlayer.Character:FindFirstChild("Starter Drink") then
-                            game.Players.LocalPlayer.Character:BreakJoints()
-                        end
-                    end
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value == 0 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 0 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 150 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Second Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 500 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Third Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 1600 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Fourth Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 3500 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Fifth Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 10000 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Sixth Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 25000 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Seventh Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 60000 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Eighth Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 150000 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Ninth Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 230000 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Atomic Drink")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 500000 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Omega Burp Juice")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-        
-                    if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 1000000 then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-                    if game.Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz") then
-                        local Players = game:GetService("Players")
-        
-                        local player = Players:FindFirstChildOfClass("Player")
-                        if player and player.Character then
-                            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                            if humanoid then
-                                local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
-                                if tool then
-                                    humanoid:EquipTool(tool)
-                                end
-                            end
-                        end
-                    end
-            end)
-        end
-        
-        local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cueshut/saves/main/criminality%20paste%20ui%20library'))()
-        
-        -- // Window \\ --
-        local window = library.new('Burp Hax', 'Fizz_Giver')
-        
-        -- // Tabs \\ --
-        local tab = window.new_tab('rbxassetid://4483345998')
-        local tab1 = window.new_tab('rbxassetid://4483345998')
-        local tab2 = window.new_tab('rbxassetid://4483345998')
-        
-        -- // Sections \\ --
-        local section = tab.new_section('Helper')
-        local section1 = tab.new_section('Auto Drink')
-        local section3 = tab1.new_section('Misc')
-        local section4 = tab1.new_section('Teleport')
-        local section5 = tab2.new_section('Credits')
-        
-        -- // Sector \\ --
-        local sector = section.new_sector('Auto Equip', 'Left')
-        local sector1 = section.new_sector('Auto Rebirth', 'Right')
-        local sector2 = section.new_sector('Auto Gems', 'Left')
-        local sector3 = section1.new_sector('Second Drink', 'Right')
-        local sector4 = section1.new_sector('Starter Drink', 'Left')
-        local sector5 = section1.new_sector('Fourth Drink', 'Right')
-        local sector6 = section1.new_sector('Third Drink', 'Left')
-        local sector7 = section1.new_sector('Sixth Drink', 'Right')
-        local sector8 = section1.new_sector('Fifth Drink', 'Left')
-        local sector9 = section1.new_sector('Eighth Drink', 'Right')
-        local sector10 = section1.new_sector('Seventh Drink', 'Left')
-        local sector11 = section1.new_sector('Atomic Drink', 'Right')
-        local sector12 = section1.new_sector('Thunder Fizz', 'Right')
-        local sector13 = section1.new_sector('Ninth Drink', 'Left')
-        local sector14 = section1.new_sector('Omega Burp Juice', 'Left')
-        local sector15 = section3.new_sector('Anti Kick', 'Left')
-        local sector16 = section3.new_sector('Anti Afk', 'Right')
-        local sector17 = section3.new_sector('Speed 850', 'Left')
-        local sector18 = section3.new_sector('Inf Jump', 'Right')
-        local sector19 = section3.new_sector('Inf Yield', 'Left')
-        local sector20 = section4.new_sector('Safe Zone', 'Left')
-        local sector21 = section4.new_sector('Pet Shop', 'Right')
-        local sector22 = section4.new_sector('Cloud1', 'Left')
-        local sector23 = section4.new_sector('cloud2', 'Right')
-        local sector24 = section4.new_sector('Disco', 'Left')
-        local sector25 = section4.new_sector('Sky Island', 'Right')
-        local sector26 = section5.new_sector('Burp Hax Made By Fizz_Giver', 'Middle')
-        local sector27 = section5.new_sector('Discord - MissYa#4371', 'Middle')
-        local sector28 = section3.new_sector('GiveTool Script', 'Right')
-        
-        -- // Elements \\ -- (Type, Name, State, Callback)
-        local button = sector.element('Button', 'Click', nil, function()
-        while wait(1) do
-            AutoEquipDrink()
-            end
-        
-        end)
-        
-        local button = sector1.element('Button', 'Click', nil, function()
-        while wait(2.5) do
-                game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
-            end
-        
-        end)
-        
-        local button = sector2.element('Button', 'Click', nil, function()
-        while wait() do
-                local gem = game.Workspace.Diamonds:WaitForChild("Diamond")
-                local Char = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-                gem.CFrame = Char.CFrame
-            end
-        
-        end)
-        
-        local button = sector4.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
-            end
-        end)
-        
-        local button = sector3.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
-            end
-        end)
-        
-        local button = sector6.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
-            end
-        end)
-        
-        local button = sector5.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
-            end
-        end)
-        
-        local button = sector8.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
-            end
-        end)
-        
-        local button = sector7.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
-            end
-        end)
-        
-        local button = sector10.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
-            end
-        end)
-        
-        local button = sector9.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
-            end
-        end)
-        
-        local button = sector12.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
-            end
-        end)
-        
-        local button = sector11.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
-            end
-        end)
-        
-        local button = sector14.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
-            end
-        end)
-        
-        local button = sector13.element('Button', 'Click', nil, function()
-        while wait(2.34) do
-                game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
-            end
-        end)
-        
-        local button = sector15.element('Button', 'Click', nil, function()
-        local mt = getrawmetatable(game)
-            local old = mt.__namecall
-            local protect = newcclosure or protect_function
-        
-            setreadonly(mt, false)
-            mt.__namecall = protect(function(self, ...)
-                local method = getnamecallmethod()
-                if method == "Kick" then
-                    wait(9e9)
-                    return
-                end
-                return old(self, ...)
-            end)
-            hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
-        end)
-        
-        local button = sector16.element('Button', 'Click', nil, function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/KHZ8pYx9", true))()
-        end)
-        
-        local button = sector17.element('Button', 'Click', nil, function()
-        while wait() do
-                game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 850
-            end
-        end)
-        
-        local button = sector18.element('Button', 'Click', nil, function()
-        game:GetService("UserInputService").JumpRequest:connect(function()
-                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-            end)
-        end)
-        
-        local button = sector19.element('Button', 'Click', nil, function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-        
-        end)
-        
-        local button = sector20.element('Button', 'Click', nil, function()
-        local New_CFrame = CFrame.new(-46, 48, -15)
-        
-            local ts = game:GetService("TweenService")
-            local char = game.Players.LocalPlayer.Character
-        
-            local part = char.HumanoidRootPart
-            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
-            local tp = {CFrame = New_CFrame}
-            ts:Create(part, ti, tp):Play()
-        
-        end)
-        
-        local button = sector21.element('Button', 'Click', nil, function()
-        local New_CFrame = CFrame.new(311, 52, 103)
-        
-            local ts = game:GetService("TweenService")
-            local char = game.Players.LocalPlayer.Character
-        
-            local part = char.HumanoidRootPart
-            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
-            local tp = {CFrame = New_CFrame}
-            ts:Create(part, ti, tp):Play()
-        end)
-        
-        local button = sector22.element('Button', 'Click', nil, function()
-        local New_CFrame = CFrame.new(296, 566, 689)
-        
-            local ts = game:GetService("TweenService")
-            local char = game.Players.LocalPlayer.Character
-        
-            local part = char.HumanoidRootPart
-            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
-            local tp = {CFrame = New_CFrame}
-            ts:Create(part, ti, tp):Play()
-        end)
-        
-        local button = sector23.element('Button', 'Click', nil, function()
-        local New_CFrame = CFrame.new(-1224, 557, -318)
-        
-            local ts = game:GetService("TweenService")
-            local char = game.Players.LocalPlayer.Character
-        
-            local part = char.HumanoidRootPart
-            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
-            local tp = {CFrame = New_CFrame}
-            ts:Create(part, ti, tp):Play()
-        end)
-        
-        local button = sector24.element('Button', 'Click', nil, function()
-        local New_CFrame = CFrame.new(63, 48, 636)
-        
-            local ts = game:GetService("TweenService")
-            local char = game.Players.LocalPlayer.Character
-        
-            local part = char.HumanoidRootPart
-            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
-            local tp = {CFrame = New_CFrame}
-            ts:Create(part, ti, tp):Play()
-        end)
-        
-        local button = sector25.element('Button', 'Click', nil, function()
-        local New_CFrame = CFrame.new(2132, 1456, -1034)
-        
-            local ts = game:GetService("TweenService")
-            local char = game.Players.LocalPlayer.Character
-        
-            local part = char.HumanoidRootPart
-            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
-            local tp = {CFrame = New_CFrame}
-            ts:Create(part, ti, tp):Play()
-        end)
-        
-        local button = sector28.element('Button', 'Click', nil, function()
-        local GiveToolsGui = Instance.new("ScreenGui")
-        local GiveTools = Instance.new("TextButton")
-        local UICorner = Instance.new("UICorner")
-        
-        GiveToolsGui.Name = "GiveToolsGui"
-        GiveToolsGui.Parent = game.CoreGui
-        GiveToolsGui.ResetOnSpawn = false
-        
-        GiveTools.Name = "GiveTools"
-        GiveTools.Parent = GiveToolsGui
-        GiveTools.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
-        GiveTools.BorderColor3 = Color3.fromRGB(0, 170, 255)
-        GiveTools.Position = UDim2.new(0, 600, 0, 100)
-        GiveTools.Size = UDim2.new(0, 200, 0, 50)
-        GiveTools.Font = Enum.Font.SourceSansBold
-        GiveTools.Text = "GiveTools"
-        GiveTools.TextColor3 = Color3.fromRGB(255, 255, 255)
-        GiveTools.TextScaled = true
-        GiveTools.TextSize = 14.000
-        GiveTools.TextWrapped = true
-        GiveTools.MouseButton1Click:Connect(function()
-            local v = game.Players.LocalPlayer.Character
-            local Char = game.Players.LocalPlayer.Character or workspace:FindFirstChild(game.Players.LocalPlayer.Name)
-            local hum = Char and Char:FindFirstChildWhichIsA('Humanoid')
-            local hrp = hum and hum.RootPart
-            local hrppos = hrp.CFrame
-            hum = hum:Destroy() or hum:Clone()
-            hum.Parent = Char
-            hum:ClearAllChildren()
-            game.Players.LocalPlayer:ClearCharacterAppearance()
-        end)
-        
-        UICorner.Parent = GiveTools
-        UICorner.CornerRadius = UDim.new(0, 8)
-        
-        local input = game:GetService("UserInputService")
-        
-          local dragging = false
-            local dragInput, mousePos, framePos
-        
-            GiveTools.InputBegan:Connect(function(input)
-                if input.UserInputType == Enum.UserInputType.MouseButton1 then
-                    dragging = true
-                    mousePos = input.Position
-                    framePos = GiveTools.Position
-                    
-                    input.Changed:Connect(function()
-                        if input.UserInputState == Enum.UserInputState.End then
-                            dragging = false
-                        end
-                    end)
-                end
-            end)
-        
-            GiveTools.InputChanged:Connect(function(input)
-                if input.UserInputType == Enum.UserInputType.MouseMovement then
-                    dragInput = input
-                end
-            end)
-        
-            input.InputChanged:Connect(function(input)
-                if input == dragInput and dragging then
-                    local delta = input.Position - mousePos
-                    GiveTools.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
-                end
-            end)
-        end)
-        
-        
-        
-        
-        
-        
-        
-        
-        
+function AutoEquipDrink()
+	spawn(function()
+			if not game.Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink") then
+				if not game.Players.LocalPlayer.Character:FindFirstChild("Starter Drink") then
+					game.Players.LocalPlayer.Character:BreakJoints()
+				end
+			end
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value == 0 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 0 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 150 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Second Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 500 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Third Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 1600 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Fourth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 3500 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Fifth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 10000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Sixth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 25000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Seventh Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 60000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Eighth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 150000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Ninth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 230000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Atomic Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 500000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Omega Burp Juice")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 1000000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz") then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 2000000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Garlic Juice")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.Backpack:FindFirstChild("Garlic Juice") then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Garlic Juice")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+	end)
+end
+
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("Burp Hax","Ocean")
+
+local Tab1 = window:NewTab("Auto Farm")
+local Tab1Section = Tab1:NewSection("Auto Farm")
+local Tab2 = window:NewTab("Helper")
+local Tab2Section = Tab2:NewSection("Helps to Afk/Inf yield")
+local Tab3 = window:NewTab("Teleport")
+local Tab3Section = Tab3:NewSection("Helps To Travel Faster")
+local Tab4 = window:NewTab("Update Log")
+local Tab4Section = Tab4:NewSection("Added Teleports")
+local Tab4Section = Tab4:NewSection("Added Speed And Infinite Jump")
+local Tab4Section = Tab4:NewSection("Added Infinity yield")
+local Tab4Section = Tab4:NewSection("Made The Auto Drink Even Faster")
+local Tab5 = window:NewTab("Credits")
+local Tab5Section = Tab5:NewSection("Made By Fizz_Giver")
+local Tab5Section = Tab5:NewSection("Thanks To Granny For Help In Auto Equip")
+
+Tab1Section:NewButton("Auto Rebirth","Auto Pestiges for you",function()
+while wait(2.5) do
+		game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
+	end
+end)
+
+Tab1Section:NewButton("Auto Gems","Auto Collect Gems for you",function()
+while wait() do
+		local gem = game.Workspace.Diamonds:WaitForChild("Diamond")
+		local Char = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		gem.CFrame = Char.CFrame
+	end
+end)
+
+Tab1Section:NewButton("Auto Equip","Auto Equips For You",function()
+while wait(1) do
+    AutoEquipDrink()
+    end
+end)
+
+Tab1Section:NewButton("Starter Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
+	end
+end)
+
+Tab1Section:NewButton("Second Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
+	end
+end)
+
+Tab1Section:NewButton("Third Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
+	end
+end)
+
+Tab1Section:NewButton("Fourth Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Fifth Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Sixth Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Seventh Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
+	end
+end)
+
+Tab1Section:NewButton("Eighth Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Ninth Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Atomic Drink","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
+	end
+end)
+
+Tab1Section:NewButton("Omega Burp Juice","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
+	end
+end)
+
+Tab1Section:NewButton("Thunder Fizz","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
+	end
+end)
+
+Tab1Section:NewButton("Garlic Juice","Auto Drink For You",function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
+	end
+end)
+
+Tab2Section:NewButton("Anti Kick","Prevents You From Being Timer Kick",function()
+local mt = getrawmetatable(game)
+	local old = mt.__namecall
+	local protect = newcclosure or protect_function
+
+	setreadonly(mt, false)
+	mt.__namecall = protect(function(self, ...)
+		local method = getnamecallmethod()
+		if method == "Kick" then
+			wait(9e9)
+			return
+		end
+		return old(self, ...)
+	end)
+	hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
+end)
+
+Tab2Section:NewButton("Anti Afk","Prevents You From Being Afk Kick",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/KHZ8pYx9", true))()
+end)
+
+Tab2Section:NewButton("Infinite yield","Gets You Inf Yield",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab2Section:NewButton("Speed 850","Makes You Run At The Speed Of 850",function()
+while wait() do
+		game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 850
+	end
+end)
+
+Tab2Section:NewButton("Infinity Jump","You Can Jump Unlimited Times",function()
+game:GetService("UserInputService").JumpRequest:connect(function()
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end)
+end)
+
+Tab3Section:NewButton("Safe Zone","Teleports You To Safe Zone",function()
+local New_CFrame = CFrame.new(-46, 48, -15)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Pet Shop","Teleports You To Pet Shop",function()
+local New_CFrame = CFrame.new(311, 52, 103)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Disco Island","Teleports You To Disco Island",function()
+local New_CFrame = CFrame.new(63, 48, 636)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Cloud 1","Teleports You To Cloud",function()
+local New_CFrame = CFrame.new(296, 566, 689)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Cloud 2","Teleports You To Cloud",function()
+local New_CFrame = CFrame.new(-1224, 557, -318)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Sky Island","Teleports You To Sky Island",function()
+local New_CFrame = CFrame.new(2132, 1456, -1034)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
   	end 
 })
 
