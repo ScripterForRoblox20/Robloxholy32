@@ -319,7 +319,7 @@ function AutoEquipDrink()
 end
 
 local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local window = kavoUi.CreateLib("Burp Hax","Ocean")
+local window = kavoUi.CreateLib("DrinkHaxx","Ocean")
 
 local Tab1 = window:NewTab("Auto Farm")
 local Tab1Section = Tab1:NewSection("Auto Farm")
