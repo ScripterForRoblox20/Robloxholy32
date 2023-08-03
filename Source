@@ -333,7 +333,7 @@ local Tab4Section = Tab4:NewSection("Added Speed And Infinite Jump")
 local Tab4Section = Tab4:NewSection("Added Infinity yield")
 local Tab4Section = Tab4:NewSection("Made The Auto Drink Even Faster")
 local Tab5 = window:NewTab("Credits")
-local Tab5Section = Tab5:NewSection("Made By Fizz_Giver")
+local Tab5Section = Tab5:NewSection("Made By Unbeatable")
 local Tab5Section = Tab5:NewSection("Credits to Fizz_Giver And Granny For Help")
 
 Tab1Section:NewButton("Auto Rebirth","Auto Pestiges for you",function()
