@@ -1605,3 +1605,10 @@ PlayerTab:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ColdStep2/Breaking-Point-Funny-Squid-Hax/main/Breaking%20Point%20Funny%20Squid%20Hax",true))();
   	end    
 })
+
+PlayerTab:AddButton({
+	Name = "Fortblox",
+	Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua'))()
+  	end    
+})
