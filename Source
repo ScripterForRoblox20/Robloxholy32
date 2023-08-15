@@ -1613,7 +1613,7 @@ PlayerTab:AddButton({
   	end    
 })
 
-PlayerTabAddButton({
+PlayerTab:AddButton({
 Name = "Auto Clicker",
 Callback = function()
 --Subscribe To ArceusMODZ--
