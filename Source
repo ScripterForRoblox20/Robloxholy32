@@ -1613,3 +1613,9 @@ PlayerTab:AddButton({
   	end    
 })
 
+PlayerTab:AddButton({
+Name = "Arsenal"
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrewDarkyy/ThunderClient/main/main.lua"))()
+end
+})
